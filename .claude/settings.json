@@ -1,0 +1,24 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(npm --version)",
+      "Bash(move index.html _legacy\\\\index.html)",
+      "Bash(move assets *)",
+      "PowerShell(New-Item -ItemType Directory -Path _legacy -Force)",
+      "PowerShell(Move-Item -Path index.html -Destination _legacy\\\\index.html -Force)",
+      "PowerShell(Move-Item -Path assets -Destination _legacy\\\\assets -Force)",
+      "PowerShell(npm create vite@latest _scaffold -- --template react-ts 2>&1)",
+      "PowerShell(npm install 2>&1)",
+      "PowerShell(npm i framer-motion 2>&1)",
+      "PowerShell(npm i -D tailwindcss@^3 postcss autoprefixer 2>&1)",
+      "PowerShell(npx tailwindcss init -p 2>&1)",
+      "PowerShell(Move-Item _legacy\\\\assets public\\\\assets -Force)",
+      "PowerShell(npx tsc -b --noEmit 2>&1)",
+      "PowerShell(npm run dev 2>&1)",
+      "PowerShell(npm i lenis clsx tailwind-merge 2>&1)"
+    ],
+    "additionalDirectories": [
+      "C:\\Users\\Asus\\Desktop\\daniel-portfolio\\_scaffold"
+    ]
+  }
+}
