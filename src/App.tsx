@@ -5,6 +5,7 @@ import HeroSection from './components/HeroSection'
 import AboutSection from './components/AboutSection'
 import WorksSection from './components/WorksSection'
 import ContactSection from './components/ContactSection'
+import ScrollIndicator from './components/ScrollIndicator'
 
 const ease = [0.2, 0.7, 0.2, 1] as const
 
@@ -78,6 +79,9 @@ export default function App() {
 
       {/* ════════  Contact ════════ */}
       <ContactSection />
+
+      {/* Persistent scroll indicator — switches label as the active section changes */}
+      <ScrollIndicator />
     </main>
   )
 }

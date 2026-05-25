@@ -214,22 +214,6 @@ export default function HeroSection() {
           </div>
         </motion.div>
 
-        {/* Scroll indicator */}
-        <motion.div
-          className="hidden md:flex absolute bottom-10 left-1/2 z-20 items-center gap-4"
-          initial={{ opacity: 0, y: 16, x: '-50%' }}
-          animate={{ opacity: 1, y: 0,  x: '-50%' }}
-          transition={{ duration: 0.9, delay: 0.94, ease }}
-        >
-          <div className="relative w-5 h-9 border border-white/35 rounded-full flex items-start justify-center pt-2">
-            <span className="block w-px h-1.5 bg-white scroll-dot"></span>
-          </div>
-          <div className="flex flex-col leading-tight">
-            <span className="font-mono text-[9.5px] tracking-[0.3em] uppercase text-white/65">Scroll down</span>
-            <span className="font-mono text-[9.5px] tracking-[0.3em] uppercase text-white/35">to explore</span>
-          </div>
-        </motion.div>
-
         {/* Meta (bottom-right) */}
         <motion.div
           className="hidden md:flex absolute bottom-10 right-20 z-20 items-center gap-4"
